@@ -21,7 +21,7 @@ function Products() {
 			</div>
 			<div className="my-16 flex flex-col items-center">
 				<h3 className="text-2xl font-bold">Products on ZET</h3>
-				<p>We are trusted by best brand in the country</p>
+				<p className="text-lg">We are trusted by best brand in the country</p>
 			</div>
 			<div className="grid gap-8 lg:grid-cols-2 xl:px-28">
 				<ProductCard
