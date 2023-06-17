@@ -1,8 +1,8 @@
 import Navbar from '@/components/navbar';
-import { Inter } from 'next/font/google';
+import { Montserrat } from 'next/font/google';
 import './global.css';
 
-const inter = Inter({ subsets: ['latin'] });
+const montserrat = Montserrat({ subsets: ['latin'] });
 
 export const metadata = {
 	title: 'ZET : Become a Certified Financial Advisor and Earn Big',
@@ -17,7 +17,10 @@ export default function RootLayout({
 }) {
 	return (
 		<html lang="en">
-			<body className={inter.className}>
+			<head>
+				<link rel="shortcut icon" href="./favicon.ico" type="image/x-icon" />
+			</head>
+			<body className={montserrat.className}>
 				<Navbar />
 				<div className="container">{children}</div>
 			</body>
