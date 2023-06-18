@@ -2,6 +2,7 @@ import { NextPage } from 'next';
 import Header from './header';
 import BrandsSlider from './slider';
 import Products from './products';
+import EffectSlider from './effectSlider';
 
 interface Props {}
 
@@ -11,6 +12,7 @@ const Page: NextPage<Props> = ({}) => {
 			<Header />
 			<BrandsSlider />
 			<Products />
+			<EffectSlider />
 		</div>
 	);
 };

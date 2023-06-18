@@ -12,11 +12,11 @@ type CardProps = {
 
 function ProductCard(props: CardProps) {
 	const { src, title, content, bg } = props;
-	const inputRef = useRef<HTMLDivElement>(null);
+	const cardRef = useRef<HTMLDivElement>(null);
 
 	let bounds: DOMRect;
 	const rotateToMouse = (e: MouseEvent): void => {
-		if (inputRef.current) bounds = inputRef.current.getBoundingClientRect();
+		if (cardRef.current) bounds = cardRef.current.getBoundingClientRect();
 		const mouseX = e.clientX;
 		const mouseY = e.clientY;
 		const leftX = mouseX - bounds.x;
@@ -27,8 +27,8 @@ function ProductCard(props: CardProps) {
 		};
 		const distance = Math.sqrt(center.x ** 2 + center.y ** 2);
 
-		if (inputRef.current)
-			inputRef.current.style.transform = `
+		if (cardRef.current)
+			cardRef.current.style.transform = `
 			scale(1.04)
       rotate3d(
         ${center.y / 100},
@@ -39,13 +39,13 @@ function ProductCard(props: CardProps) {
     `;
 	};
 	const removeListener = () => {
-		if (inputRef.current) inputRef.current.style.transform = '';
+		if (cardRef.current) cardRef.current.style.transform = '';
 	};
 
 	return (
 		<div style={{ perspective: 1000, transition: 'scale 3s ease' }}>
 			<div
-				ref={inputRef}
+				ref={cardRef}
 				onMouseMove={rotateToMouse}
 				onMouseLeave={removeListener}
 				style={{ backgroundColor: bg }}

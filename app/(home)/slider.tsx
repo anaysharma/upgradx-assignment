@@ -20,33 +20,29 @@ const images = [
 ];
 
 function BrandsSlider() {
-	const [slidesToShow, setSlidesToShow] = useState(5);
-
 	useEffect(() => {
-		const handleResize = () => {
-			if (window.innerWidth <= 768) {
-				setSlidesToShow(3);
-			} else {
-				setSlidesToShow(5);
-			}
-		};
-		handleResize();
 		window.dispatchEvent(new Event('resize'));
-		window.addEventListener('resize', handleResize);
-		return () => {
-			window.removeEventListener('resize', handleResize);
-		};
 	}, []);
 
 	const settings = {
 		dots: false,
 		infinite: true,
 		speed: 3000,
-		slidesToShow,
+		slidesToShow: 5,
 		slidesToScroll: 1,
 		autoplay: true,
 		autoplaySpeed: 1000,
 		cssEase: 'ease',
+		arrows: false,
+		responsive: [
+			{
+				breakpoint: 700,
+				settings: {
+					slidesToShow: 3,
+					slidesToScroll: 1,
+				},
+			},
+		],
 	};
 
 	return (
