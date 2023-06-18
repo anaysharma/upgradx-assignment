@@ -39,7 +39,7 @@ function EffectSlider() {
 						<h3 className="uppercase">The ZET Effect</h3>
 						<Slider
 							{...settings}
-							className="w-96 text-white lg:text-3xl xl:w-[500px]"
+							className="w-80 text-white lg:text-3xl xl:w-[500px]"
 						>
 							<div>
 								<p>

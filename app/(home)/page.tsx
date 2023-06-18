@@ -3,6 +3,7 @@ import Header from './header';
 import BrandsSlider from './slider';
 import Products from './products';
 import EffectSlider from './effectSlider';
+import WhyUs from './whyUs';
 
 interface Props {}
 
@@ -13,6 +14,7 @@ const Page: NextPage<Props> = ({}) => {
 			<BrandsSlider />
 			<Products />
 			<EffectSlider />
+			<WhyUs />
 		</div>
 	);
 };
