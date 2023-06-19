@@ -8,7 +8,7 @@ function WhyUs() {
 		<section className="flex flex-col md:flex-row xl:px-28">
 			<div className="relative grid place-items-center md:w-96">
 				<Image
-					className="absolute hidden md:block"
+					className="absolute -z-10 hidden md:block"
 					src="/images/bgImg.png"
 					alt="aside background pattern image"
 					height={500}
@@ -41,7 +41,7 @@ function WhyUs() {
 			>
 				<div className="flex flex-col items-center md:items-start">
 					<Image
-						className="mb-6 aspect-square w-20 md:w-auto"
+						className="mb-6 aspect-square w-20 md:w-24"
 						src="/images/whyUsZero.svg"
 						height={100}
 						width={100}
@@ -58,7 +58,7 @@ function WhyUs() {
 				</div>
 				<div className="flex flex-col items-center md:items-start">
 					<Image
-						className="mb-6 aspect-square w-20 md:w-auto"
+						className="mb-6 aspect-square w-20 md:w-24"
 						src="/images/whyUsPayout.svg"
 						height={100}
 						width={100}
@@ -75,7 +75,7 @@ function WhyUs() {
 				</div>
 				<div className="flex flex-col items-center md:items-start">
 					<Image
-						className="mb-6 aspect-square w-20 md:w-auto"
+						className="mb-6 aspect-square w-20 md:w-24"
 						src="/images/whyUsFin.svg"
 						height={100}
 						width={100}
@@ -92,7 +92,7 @@ function WhyUs() {
 				</div>
 				<div className="flex flex-col items-center md:items-start">
 					<Image
-						className="mb-6 aspect-square w-20 md:w-auto"
+						className="mb-6 aspect-square w-20 md:w-24"
 						src="/images/whyUsSupp.svg"
 						height={100}
 						width={100}
@@ -109,7 +109,7 @@ function WhyUs() {
 				</div>
 				<div className="flex flex-col items-center md:items-start">
 					<Image
-						className="mb-6 aspect-square w-20 md:w-auto"
+						className="mb-6 aspect-square w-20 md:w-24"
 						src="/images/whyUsCustomer.svg"
 						height={100}
 						width={100}
@@ -126,7 +126,7 @@ function WhyUs() {
 				</div>
 				<div className="flex flex-col items-center md:items-start">
 					<Image
-						className="mb-6 aspect-square w-20 md:w-auto"
+						className="mb-6 aspect-square w-20 md:w-24"
 						src="/images/whyUsProd.svg"
 						height={100}
 						width={100}

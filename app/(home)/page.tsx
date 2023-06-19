@@ -1,13 +1,11 @@
-import { NextPage } from 'next';
 import Header from './header';
 import BrandsSlider from './slider';
 import Products from './products';
 import EffectSlider from './effectSlider';
 import WhyUs from './whyUs';
+import Earning from './earning';
 
-interface Props {}
-
-const Page: NextPage<Props> = ({}) => {
+function Page() {
 	return (
 		<div className="container">
 			<Header />
@@ -15,8 +13,9 @@ const Page: NextPage<Props> = ({}) => {
 			<Products />
 			<EffectSlider />
 			<WhyUs />
+			<Earning />
 		</div>
 	);
-};
+}
 
 export default Page;

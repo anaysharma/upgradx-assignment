@@ -23,7 +23,7 @@ function EffectSlider() {
 
 	return (
 		<section className="my-44 grid h-screen place-items-center">
-			<div className="clip absolute left-0 -z-20 h-[120vh] w-screen bg-[#145cc5]"></div>
+			<div className="clip absolute left-0 -z-20 h-[120vh] w-full bg-[#145cc5]"></div>
 			<div className="clip2 relative flex h-3/4 w-full items-center justify-center bg-[#417fda] xl:mx-28 xl:w-auto">
 				<div className="flex">
 					<div className="-mb-10 -mr-10 hidden hue-rotate-180 saturate-200 lg:block">

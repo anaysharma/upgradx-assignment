@@ -4,7 +4,7 @@ import ProductCard from './productCard';
 function Products() {
 	return (
 		<section className="grid">
-			<div className="absolute left-0 -z-10 h-full w-screen bg-gradient-to-br from-blue-200/30">
+			<div className="absolute left-0 -z-10 h-full w-full bg-gradient-to-br from-blue-200/30">
 				<Image
 					src="/images/pat1.svg"
 					alt="background decoration image"
