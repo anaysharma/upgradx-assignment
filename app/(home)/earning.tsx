@@ -17,7 +17,7 @@ function Earning() {
 	};
 
 	return (
-		<section className="my-60 grid place-items-center py-20 xl:px-28 xl:pb-28 xl:pt-20">
+		<section className="my-60 grid place-items-center py-20 xl:my-80 xl:px-28 xl:pb-28 xl:pt-20">
 			<div className="clip1 lg:clip absolute left-0 -z-10 h-[200vh] w-full bg-[#0a2540] md:h-[160vh] lg:h-[200vh]"></div>
 			<div className="text-white xl:px-20">
 				<div className="mb-24 w-full text-center">
@@ -26,7 +26,7 @@ function Earning() {
 						We have create the app the make your earning easy
 					</p>
 				</div>
-				<div className="">
+				<div className="relative grid place-items-center">
 					<Slider {...settings} className="grid place-content-center">
 						<div className="flex flex-col-reverse items-center gap-20 md:flex-row">
 							<div className="flex flex-1 flex-col items-center gap-10 md:items-start">
@@ -36,8 +36,8 @@ function Earning() {
 								<p className="text-center text-3xl font-bold text-[#a3cbff] md:text-left">
 									Download the App and sign up as ZET agent
 								</p>
-								<div className="relative h-3 w-[300px] overflow-hidden rounded-full bg-white">
-									<div className="slide-progress absolute h-3 bg-[#538bff] transition-all duration-[6s] ease-linear"></div>
+								<div className="relative h-3 w-[300px] rounded-full bg-white">
+									<div className="slide-progress absolute h-3 rounded-full bg-[#7096ff] transition-all duration-[6s] ease-linear"></div>
 								</div>
 								<Image
 									src="/images/googleplay.svg"
@@ -46,7 +46,7 @@ function Earning() {
 									alt="google play icon"
 								/>
 							</div>
-							<div className="w-52 overflow-hidden rounded-[30px] lg:w-72">
+							<div className="w-52 overflow-hidden rounded-3xl lg:w-72 lg:rounded-[30px]">
 								<video autoPlay loop muted>
 									<source src="/step3.mp4" type="video/mp4" />
 								</video>
@@ -60,8 +60,8 @@ function Earning() {
 								<p className="text-center text-3xl font-bold text-[#a3cbff] md:text-left">
 									Register your customers and Recommend financial products
 								</p>
-								<div className="relative h-3 w-[300px] overflow-hidden rounded-full bg-white">
-									<div className="slide-progress absolute h-3 bg-[#538bff] transition-all duration-[6s] ease-linear"></div>
+								<div className="relative h-3 w-[300px] rounded-full bg-white">
+									<div className="slide-progress absolute h-3 rounded-full bg-[#7096ff] transition-all duration-[6s] ease-linear"></div>
 								</div>
 								<Image
 									src="/images/googleplay.svg"
@@ -70,7 +70,7 @@ function Earning() {
 									alt="google play icon"
 								/>
 							</div>
-							<div className="w-52 overflow-hidden rounded-[30px] lg:w-72">
+							<div className="w-52 overflow-hidden rounded-3xl lg:w-72 lg:rounded-[30px]">
 								<video autoPlay loop muted>
 									<source src="/step3.mp4" type="video/mp4" />
 								</video>
@@ -84,8 +84,8 @@ function Earning() {
 								<p className="text-center text-3xl font-bold text-[#a3cbff] md:text-left">
 									Start earning upto ₹ 1 Lakh every month
 								</p>
-								<div className="relative h-3 w-[300px] overflow-hidden rounded-full bg-white">
-									<div className="slide-progress absolute h-3 bg-[#538bff] transition-all duration-[6s] ease-linear"></div>
+								<div className="relative h-3 w-[300px] rounded-full bg-white">
+									<div className="slide-progress absolute h-3 rounded-full bg-[#7096ff] transition-all duration-[6s] ease-linear"></div>
 								</div>
 								<Image
 									src="/images/googleplay.svg"
@@ -94,13 +94,20 @@ function Earning() {
 									alt="google play icon"
 								/>
 							</div>
-							<div className="w-52 overflow-hidden rounded-[30px] lg:w-72">
+							<div className="w-52 overflow-hidden rounded-3xl lg:w-72 lg:rounded-[30px]">
 								<video autoPlay loop muted>
 									<source src="/step3.mp4" type="video/mp4" />
 								</video>
 							</div>
 						</div>
 					</Slider>
+					<Image
+						className="absolute -top-10 -z-10 w-72 md:-right-16 lg:w-auto"
+						src="/images/earningDec.svg"
+						height={600}
+						width={400}
+						alt="background decal"
+					/>
 				</div>
 			</div>
 		</section>

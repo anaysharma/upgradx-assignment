@@ -1,5 +1,11 @@
+import Header from './header';
+
 function Page() {
-	return <div>about</div>;
+	return (
+		<div>
+			<Header />
+		</div>
+	);
 }
 
 export default Page;
