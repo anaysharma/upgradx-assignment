@@ -1,4 +1,7 @@
+'use client';
+
 import InvestorCard from './investorCard';
+import { motion } from 'framer-motion';
 
 function Investors() {
 	return (
@@ -7,13 +10,23 @@ function Investors() {
 				<h2 className="text-2xl font-bold md:text-3xl lg:text-4xl">
 					Meet the Investors
 				</h2>
-				<div className="grid grid-cols-2 justify-items-center gap-6 md:grid-cols-3 xl:grid-cols-4">
+				<motion.div
+					initial={{ y: 120, opacity: 0 }}
+					whileInView={{ y: 0, opacity: 1 }}
+					transition={{ ease: 'easeOut', duration: 0.5 }}
+					className="grid grid-cols-2 justify-items-center gap-6 md:grid-cols-3 xl:grid-cols-4"
+				>
 					<InvestorCard src="/images/InvCompany1.png" />
 					<InvestorCard src="/images/InvCompany2.png" />
 					<InvestorCard src="/images/InvCompany3.png" />
 					<InvestorCard src="/images/InvCompany4.png" />
-				</div>
-				<div className="grid grid-cols-2 justify-items-center gap-6 md:grid-cols-3 xl:grid-cols-4">
+				</motion.div>
+				<motion.div
+					initial={{ y: 120, opacity: 0 }}
+					whileInView={{ y: 0, opacity: 1 }}
+					transition={{ ease: 'easeOut', duration: 0.5 }}
+					className="grid grid-cols-2 justify-items-center gap-6 md:grid-cols-3 xl:grid-cols-4"
+				>
 					<InvestorCard
 						src="/images/Inv1.png"
 						name="Kunal Shah"
@@ -54,7 +67,7 @@ function Investors() {
 						name="Gokul Rajaram"
 						categ="Product, DOORDASH"
 					/>
-				</div>
+				</motion.div>
 			</div>
 		</section>
 	);
