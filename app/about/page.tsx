@@ -1,6 +1,7 @@
 import Featured from './featured';
 import Growth from './growth';
 import Header from './header';
+import Investors from './investors';
 
 function Page() {
 	return (
@@ -8,6 +9,7 @@ function Page() {
 			<Header />
 			<Growth />
 			<Featured />
+			<Investors />
 		</div>
 	);
 }
