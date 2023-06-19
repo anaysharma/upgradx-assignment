@@ -7,7 +7,7 @@ function Footer() {
 			<div className="absolute -z-10">
 				<Image
 					className="h-[500px] object-cover"
-					src="/images/Footer.png"
+					src="/images/footer.png"
 					width={2000}
 					height={700}
 					alt="footer bg image"

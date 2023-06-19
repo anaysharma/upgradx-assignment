@@ -48,7 +48,7 @@ function Earning() {
 							</div>
 							<div className="w-52 overflow-hidden rounded-3xl lg:w-72 lg:rounded-[30px]">
 								<video autoPlay loop muted>
-									<source src="/step3.mp4" type="video/mp4" />
+									<source src="/Step3.mp4" type="video/mp4" />
 								</video>
 							</div>
 						</div>
