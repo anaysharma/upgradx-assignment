@@ -95,7 +95,7 @@ function Footer() {
 							<Link href="">
 								<span>
 									<Image
-										src="/images/telegram.svg"
+										src="/images/Telegram.svg"
 										height={30}
 										width={30}
 										alt="telegram logo"
@@ -105,7 +105,7 @@ function Footer() {
 							<Link href="">
 								<span>
 									<Image
-										src="/images/whatsapp.svg"
+										src="/images/Whatsapp.svg"
 										height={30}
 										width={30}
 										alt="whatsapp logo"
