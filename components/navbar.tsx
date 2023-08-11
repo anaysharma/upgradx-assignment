@@ -38,7 +38,7 @@ function Navbar() {
 					} absolute inset-0 top-16 z-20 flex-col items-center justify-center gap-16 border-t bg-white text-lg text-slate-600 md:static md:flex-row md:gap-8 md:border-none`}
 				>
 					<Link className={pathname === '/' ? 'text-blue-600' : ''} href="/">
-						Home
+						Homie
 					</Link>
 					<Link
 						className={pathname === '/about' ? 'text-blue-600' : ''}
